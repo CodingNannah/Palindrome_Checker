@@ -4,4 +4,6 @@ body {
 
 button {
     background-color: #4fc3f7;
+    padding: 5px;
+    border-radius: 5px;
 }
