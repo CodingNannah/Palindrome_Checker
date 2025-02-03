@@ -1,15 +1,13 @@
+const input = document.getElementById("userInput");
+const messageArea = document.getElementById("messageArea");
+
 function reverseString(str) {
     // convert str to array & reverse, to string & compare
     return str.split("").reverse().join("")
 }
 
 function check() {
-    // moving definition elements inside the function
-    const input = document.getElementById("userInput");
-    const messageArea = document.getElementById("messageArea");
-
     // clear input field, previous message, and class
-    input.value = "";
     messageArea.textContent = "";
     messageArea.className = "";
 
@@ -20,14 +18,14 @@ function check() {
 
     // check if reverse is same
     if (value === reverse) {
-        showMessage("Palindrome!", "success", messageArea);
+        showMessage("Palindrome!", "success");
     } else {
-        showMessage("Not a Palindrome.", "error", messageArea);
+        showMessage("Not a Palindrome.", "error");
     }
         
 }
 
-function showMessage(message, type, messageArea) {
+function showMessage(message, type) {
     messageArea.textContent = message;
     messageArea.className = type;
 }
