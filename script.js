@@ -7,6 +7,9 @@ function reverseString(str) {
 }
 
 function check() {
+    // clear input field
+    input.value = "";
+    
     // clear previous message and class
     messageArea.textContent = "";
     messageArea.className = "";
@@ -18,14 +21,14 @@ function check() {
 
     // check if reverse is same
     if (value === reverse) {
-        showMessage("success", "Palindrome!")
+        showMessage("Palindrome!", "success")
     } else {
-        showMessage("error", "Not a Palindrome.")
+        showMessage("Not a Palindrome.", "error")
     }
         
 }
 
-function showMessage(type, message) {
-    messageArea.className = type;
+function showMessage(message, type) {
     messageArea.textContent = message;
+    messageArea.className = type;
 }
