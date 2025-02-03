@@ -2,8 +2,32 @@ body {
     background-color: #f8f8f8;
 }
 
+input {
+    width: 30%;
+    padding: 5px;
+}
+
 button {
     background-color: #4fc3f7;
     padding: 5px;
     border-radius: 5px;
+}
+
+#messageArea {
+    padding: 10px;
+    width: 45%;
+    border: 1px solid #CCC;
+    margin-top: 10px;
+}
+
+#messageArea.success {
+    color: #2e7d32;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+#messageArea.error {
+    color: #C70039;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
 }
