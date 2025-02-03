@@ -1,4 +1,4 @@
-# First 100 Days of Coding (started 1 Feb 2025) Project
+# First 100 Days of Coding Project
 From Tech with Tim Tutorial https://www.youtube.com/watch?v=2ml4x0rO1PQ at 30:22
 
 ## Purpose
