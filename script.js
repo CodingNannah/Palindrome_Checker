@@ -18,9 +18,9 @@ function check() {
 
     // check if reverse is same
     if (value === reverse) {
-        showMessage("Palindrome!", "success");
+        showMessage("Palindrome!", "true");
     } else {
-        showMessage("Not a Palindrome.", "error");
+        showMessage("Not a Palindrome.", "false");
     }
         
 }

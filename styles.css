@@ -22,13 +22,13 @@ button {
     margin-top: 10px;
 }
 
-#messageArea.success {
+#messageArea.true {
     color: #2e7d32;
     background-color: #d4edda;
     border-color: #c3e6cb;
 }
 
-#messageArea.error {
+#messageArea.false {
     color: #C70039;
     background-color: #f8d7da;
     border-color: #f5c6cb;
