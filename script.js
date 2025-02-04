@@ -7,25 +7,27 @@ function reverseString(str) {
 }
 
 function check() {
-    // clear input field, previous message, and class
-    messageArea.textContent = "";
-    messageArea.className = "";
-
     const value = input.value;
     // alert(value);
     const reverse = reverseString(value);
     // alert(reverse);
 
+    // clear previous message and class
+    messageArea.textContent = "";
+    messageArea.className = ""; 
+
     // check if reverse is same
     if (value === reverse) {
-        showMessage("Palindrome!", "true");
+        showMessage("Palindrome!", "true", input.value);
     } else {
-        showMessage("Not a Palindrome.", "false");
-    }
-        
+        showMessage("Not a Palindrome.", "false", input.value);
+    } 
+    // clear input field
+    input.value = ""; 
 }
 
-function showMessage(message, type) {
-    messageArea.textContent = message;
+
+function showMessage(message, type, inputValue) {
+    messageArea.textContent = `${inputValue}: ${message}`;
     messageArea.className = type;
 }
